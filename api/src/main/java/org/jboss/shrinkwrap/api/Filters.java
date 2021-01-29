@@ -19,8 +19,6 @@ package org.jboss.shrinkwrap.api;
 import java.util.Collection;
 import java.util.regex.Pattern;
 
-import javax.annotation.processing.Filer;
-
 /**
  * Factory class for the creation of new {@link Filter} instances. Filter instances using this shorthand class will be
  * created using the {@link ClassLoader} associated with the default {@link Domain}'s {@link Configuration}.
@@ -56,7 +54,7 @@ public final class Filters {
     }
 
     /**
-     * {@link Filer} that include all {@link ArchivePath}s that match the given Regular Expression {@link Pattern}.
+     * {@link Filter} that include all {@link ArchivePath}s that match the given Regular Expression {@link Pattern}.
      *
      * @param regexp
      *            The expression to include
@@ -80,7 +78,7 @@ public final class Filters {
     }
 
     /**
-     * {@link Filer} that include all {@link ArchivePath}s that match the given List of paths..
+     * {@link Filter} that include all {@link ArchivePath}s that match the given List of paths..
      *
      * @param paths
      *            The paths to included
@@ -92,7 +90,7 @@ public final class Filters {
     }
 
     /**
-     * {@link Filer} that include all {@link ArchivePath}s that match the given List of paths..
+     * {@link Filter} that include all {@link ArchivePath}s that match the given List of paths..
      *
      * @param paths
      *            The paths to included
