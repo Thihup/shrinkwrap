@@ -100,6 +100,14 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
       </plugin>
 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <argLine>--add-exports=org.jboss.shrinkwrap.impl.base/org.jboss.shrinkwrap.impl.base.test=ALL-UNNAMED</argLine>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
 
